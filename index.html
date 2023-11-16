@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+
+  <title>Flexbox Pricing Table</title>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+      background-color: moccasin;
+    }
+
+
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 1rem;
+    }
+
+
+
+    .pricing-plan {
+      width: 450px;
+      background-color: lightblue;
+      border-radius: 10px;
+      text-align: center;
+      flex: 1;
+      max-width: 500px;
+
+    }
+
+    .plan-title {
+      font-size: 20px;
+      margin: 10px;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .plan-price {
+      font-size: 35px;
+    }
+
+    li {
+      list-style: none;
+      margin: 25px;
+    }
+
+    .plan-features {
+      padding: 0;
+
+
+    }
+
+    .plan-button {
+      border: none;
+      background-color: black;
+      color: white;
+      border-radius: 50px;
+      height: 25px;
+      margin: 6px;
+
+    }
+
+    @media(max-width:1200px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title basic">Broke Man Option</div>
+      <div class="plan-price">£299.99/month</div>
+      <ul class="plan-features">
+        <li>✅Access to a curated library of attention-boosting content.</li>
+        <li>✅Weekly email tips for improving focus. </li>
+        <li>🚫 Basic analytics on your attention patterns.</li>
+      </ul>
+      <button class="plan-button">Get Rich</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title Standard">Oh You Got Money!</div>
+      <div class="plan-price">£599.99/month</div>
+      <ul class="plan-features">
+        <li>✅ Monthly webinar on attention management techniques.</li>
+        <li>✅ Customizable reminders for focus sessions.</li>
+        <li>✅ Premium content and exercises for enhanced concentration.</li>
+      </ul>
+      <button class="plan-button">Get Rich</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title Premium">Jaylilsta level</div>
+      <div class="plan-price">£999.99/month</div>
+      <ul class="plan-features">
+        <li>✅ Personalized attention coaching session (30 minutes) every month.</li>
+        <li>✅ Priority access to new features and updates.</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Get Rich</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
